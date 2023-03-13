@@ -23,7 +23,7 @@ if len(article_text) > 5:
             frequency_penalty=0.6,
             temperature = temp
         )
-        res = response["choices"][3]["text"]
+        res = response["choices"][0]["text"]
         st.info(res)
 
         st.download_button("Download result", res)
